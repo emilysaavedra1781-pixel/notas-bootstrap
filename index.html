@@ -1,3 +1,136 @@
+
+<!!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>Probando si recuerdo 😊</title>
+    </head>
+
+    <body>
+
+
+        <div class="Datos">
+            <h4> Ingresen notas</h4>
+            <input type="number" id="numero1" placeholder="¿Cuantas notas quiere agregar?"><br><br>
+
+            <input type="number" id="num" placeholder="Ingrese la nota acumuladas"><br><br>
+
+        </div>
+
+        <button onclick="calcularNotas()">Generar</button>
+        <button onclick="calcularAlmacen()">Calcular notas almacenadas</button>
+        <button onclick="calcularNotasacu()">Calcular notas acumuladas</button>
+
+        <p id="resultado"></p>
+
+        <script>
+            function calcularNotas() {
+                let n1 = parseFloat(document.getElementById("numero1").value);
+
+                //parseFloat Decimal//
+
+                //
+                if (isNaN(n1)) {
+                    alert("Ingresa los numeros");
+                    return;
+                }
+
+                /*
+                let suma = (n1 +n2 +n3)/3;
+
+                let estado;
+-
+
+                if (suma >= 12) {
+                    estado = "Aprobado";
+                }
+                 else {
+                    estado ="Desaprobado"
+                 }
+
+                 */
+  
+                document.getElementById("resultado").innerHTML =
+                    "Promedio: " + suma   + estado;
+            }
+        </script>
+
+
+        <script>
+
+            function calcularNotasacu() {
+                let  n4 =parseFloat(document.getElementById("num").value);
+
+let Numl = [ 12, 12, 13 , 16];
+
+// 2
+
+
+
+                if (isNaN(n4)) {
+                    alert("Ingresa el  numero");
+                    return;
+                }
+
+                let suma=0;
+                let proceso= 0;
+
+                for(let i = 0; suma <= 20 ; i++){
+                    suma += n4 ; 
+
+                    proceso += "Paso " +(i+1) +":suma = "+ suma +" <br> ";
+
+                }
+
+                
+                if (suma >= 12) {
+                    estado = "Aprobado";
+                }
+                 else {
+                    estado ="Desaprobado"
+                 }
+
+                 document.getElementById("resultado").innerHTML =
+                  proceso + "<strong>Total final " +suma + "</Stron>"  +estado;
+            }
+
+        </script>
+
+        <script>
+
+
+        </script>
+
+
+
+
+
+
+
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--<!DOCTYPE html>
 <html lang="es">
 <head>
